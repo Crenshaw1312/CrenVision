@@ -23,16 +23,6 @@
 @import url('https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css');
 @import url("https://discordstyles.github.io/HorizontalServerList/base.css");
 
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
-/* not required */
-@import url('https://discordstyles.github.io/RadialStatus/base.css');
-@import url("https://raw.githack.com/Controlfreak707/Channel-Icons/main/channelicons.theme.css"); /* make chat icons cool, remove uotes to enable */
-@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css"); /* USRBG POPOUTS */
-@import url('https://tropix126.github.io/BetterDiscordStuff/friendgrid/v3/css/base.css');
-/*@import url('https://mentalscars.github.io/Patch/transparency.css'); /* make it glasscord friendly, thanks cruxie#7861 (may need restart) */
-
 /**
 * Hewowo :3
 * I'm Crenshaw#1312, and I like doing a prowgrwam thingmabaob
@@ -1138,45 +1128,4 @@ margin-right: 10px;
 /* Hides Textbox when you don't have permission to talk in the channel */
 .channelTextAreaDisabled-8rmlrp > div {
   display: none
-}
-
-
-/* custom color per user, via their ID */
-/* Person I tested it on */
-[data-author-id="389250862347976705"] .markup-2BOw-j, [data-author-id="389250862347976705"] .username-1A8OIy{
-	background-color: rgba(255, 0, 179, 0.3) !important;
-}
-
-/* Another Red/astyx */
-[data-author-id="832112307554353152"] .markup-2BOw-j, [data-author-id="832112307554353152"] .username-1A8OIy {
-  background-color: #0dffc35e !important;
-}
-
-/* Devnote */
-[data-author-id="622146791659405313"] .markup-2BOw-j, [data-author-id="622146791659405313"] .username-1A8OIy {
-  background-color: #e67d2259 !important;
-}
-
-/* Kira */
-[data-author-id="511501021336436749"] .markup-2BOw-j, [data-author-id="511501021336436749"] .username-1A8OIy {
-  background: linear-gradient(90deg, #e7b17763, #2a292f65) !important;
-}
-
-/* Raiden*/
-[data-author-id="848041050211614780"] .markup-2BOw-j, [data-author-id="848041050211614780"] .username-1A8OIy {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-}
-
-/* WickedWizard */
-[data-author-id="719421577086894101"] .markup-2BOw-j, [data-author-id="719421577086894101"] .username-1A8OIy {
-  background-color: rgba(135, 207, 235, 0.418) !important;
-}
-
-/* Mayo */
-[data-author-id="719421577086894101"] .markup-2BOw-j, [data-author-id="719421577086894101"] .username-1A8OIy {
-  background-color: rgba(135, 207, 235, 0.418) !important;
-}
-
-[data-author-id="564071610143866894"] .markup-2BOw-j, [data-author-id="564071610143866894"] .username-1A8OIy {
-  background-color: rgba(255, 0, 0, 0.418) !important;
 }
