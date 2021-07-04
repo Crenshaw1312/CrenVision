@@ -321,9 +321,14 @@ color: white !important;
   background: transparent;
   border-color: transparent;
 }
+/* make invite to guild list look better */
+.submenuPaddingContainer-fiOCHc [aria-activedescendant ^= "user-context-invite-to-server"] {
+  max-height: 300px !important;
+  overflow-y: scroll;
+}
 
 
-/* diplay none bank */
+/* DISPLAY NONE BANK */
 /* currently selected clear */
 .privateChannels-1nO12o .channel-2QD9_O.selected-aXhQR6 .layout-2DM8Md:after {
 background: none;
@@ -758,6 +763,7 @@ margin-right: 10px;
 }
 .userPopout-xaxa6l .headerText-1vVs-U {
   padding-top: 15% !important;
+  padding-bottom: 10px;
   text-align: center;
   background-color: transparent;
 }
@@ -799,6 +805,9 @@ margin-right: 10px;
   padding-top: 5px;
   padding-left: 3px !important;
 }
+.userPopout-xaxa6l .footer-3UKYOU [type="text"] {
+  border-radius: var(--bubble-radius-small) !important;
+}
 .userPopout-xaxa6l .activity-2INFPu .buttonsWrapper-2spIeK {
   margin-top: 0px;
   margin-right: 6px !important;
@@ -831,7 +840,6 @@ margin-right: 10px;
   align-items: center !important;
   -webkit-box-align: center !important;
 }
-
 .avatar-37jOim.wrapper-3t9DeA, .avatarUploader-2UF9NL, .avatarUploaderInner-Oiob_P {
   width: var(--user-popout-avatar-size) !important;
   height: var(--user-popout-avatar-size) !important;
@@ -941,7 +949,6 @@ margin-right: 10px;
   background-color: var(--bubble-color);
   filter: brightness(10%);
 }
-
 
 /* CHANNEL TABS */
 .channelTabs-fav {
