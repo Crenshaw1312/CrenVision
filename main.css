@@ -493,13 +493,14 @@ box-shadow: none !important;
 /* MESSAGES */
 
 /*give all usernames a pill in chat*/
-.message-2qnXI6 .header-23xsNx {
-  border-radius: var(--bubble-radius-big) !important;
-  padding-right: 4px;
-  padding-left: 4px;
-}
 [data-is-author-self="false"] .header-23xsNx {
   background-color: var(--chat-username-pill-color-other);
+}
+.message-2qnXI6 .header-23xsNx {
+  border-radius: var(--bubble-radius-big);
+  background-color: var(--chat-username-pill-color-other);
+  padding: 3px;
+  margin-right: 5px;
 }
 [data-is-author-self="true"] .header-23xsNx {
   display: none;
@@ -1150,7 +1151,7 @@ margin-right: 10px;
   display: none
 }
 
-/* blox */
+/* Crenshaw */
 [data-author-id="766385575530856458"] .markup-2BOw-j, [data-author-id="766385575530856458"] .username-1A8OIy {
   background-color: rgba(89, 0, 255, 0.35) !important;
 }
