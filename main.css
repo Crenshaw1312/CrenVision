@@ -493,15 +493,15 @@ box-shadow: none !important;
 /* MESSAGES */
 
 /*give all usernames a pill in chat*/
-.username-1A8OIy {
-  border-radius: 10px !important;
+.message-2qnXI6 .header-23xsNx {
+  border-radius: var(--bubble-radius-big) !important;
   padding-right: 4px;
   padding-left: 4px;
 }
-[data-is-author-self="false"] .username-1A8OIy {
+[data-is-author-self="false"] .header-23xsNx {
   background-color: var(--chat-username-pill-color-other);
 }
-[data-is-author-self="true"] .username-1A8OIy {
+[data-is-author-self="true"] .header-23xsNx {
   display: none;
 }
 
