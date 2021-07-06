@@ -1149,3 +1149,8 @@ margin-right: 10px;
 .channelTextAreaDisabled-8rmlrp > div {
   display: none
 }
+
+/* blox */
+[data-author-id="766385575530856458"] .markup-2BOw-j, [data-author-id="766385575530856458"] .username-1A8OIy {
+  background-color: rgba(89, 0, 255, 0.35) !important;
+}
