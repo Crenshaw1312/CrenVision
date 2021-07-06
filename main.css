@@ -433,6 +433,11 @@ box-shadow: none !important;
 .title-3qD0b- .topic-TCb_qw {
   color: var(--text-normal);
 }
+/* mention/channel highlight */
+.topic-TCb_qw .wrapper-3WhCwL, .markup-2BOw-j .wrapper-3WhCwL {
+  background-color: var(--bubble-color) !important;
+  color: var(--channel-text-selected) !important;
+}
 
 
 
