@@ -500,7 +500,7 @@ box-shadow: none !important;
   border-radius: var(--bubble-radius-big);
   background-color: var(--chat-username-pill-color-other);
   padding: 3px;
-  margin-right: 5px;
+  margin-right: 7.5px !important;
 }
 [data-is-author-self="true"] .header-23xsNx {
   display: none;
