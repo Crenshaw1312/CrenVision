@@ -1106,6 +1106,10 @@ margin-right: 10px;
   mask-position: 300px 300px;
   -webkit-mask: linear-gradient(to right, transparent, black, black, black, black, black, black, black, black, black, black, transparent);
 }
+.gm-carousel-modal {
+  background-color: var(--bubble-color) !important;
+  border-radius: var(--bubble-radius-big) !important;
+}
 
   /* crenshaw (the best one) http://www.barnesandnoble.com/blog/kids/wp-content/uploads/sites/7/2015/09/Crenshaw.jpg */
 /* Megumin (vertical) https://media.discordapp.net/attachments/773783597861437471/852470631093108736/image0.jpg */
