@@ -948,6 +948,24 @@ margin-right: 10px;
 }
 
 
+/* reactions */
+.header-23xsNx .pronoundb-pronouns {
+  color: var(--muted-color) !important;
+}
+.reaction-1hd86g.reactionMe-wv5HKu > div > div > div  {
+  color: white !important;
+}
+.reaction-1hd86g, .reaction-1hd86g.reactionMe-wv5HKu {
+  border-color: var(--url-color);
+  border-radius: var(--bubble-radius-big);
+}
+.reaction-1hd86g.reactionMe-wv5HKu {
+  background-color: var(--message-personal-color) !important;
+}
+.reaction-1hd86g:not(.reaction-1hd86g.reactionMe-wv5HKu) {
+  background-color: var(--message-other-color) !important;
+}
+
 /* guilds */
 .wrapper-3NnKdC, #app-mount .guilds-1SWlCJ {
   background-color: var(--bubble-color) !important;
