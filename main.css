@@ -39,7 +39,7 @@
   --interactive-active: pink;
   --url-color: rgb(187, 168, 255); 
 /*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
-  --main-image: url(https://media.discordapp.net/attachments/818899863940366406/854840090647592960/199240187_898359471086367_5947425499359738058_n.png); /* an image with duller colors looks nice on backdrop */
+  --main-image: var(--customImage, url(https://media.discordapp.net/attachments/818899863940366406/854840090647592960/199240187_898359471086367_5947425499359738058_n.png)); /* an image with duller colors looks nice on backdrop */
 
   /* glasscord */
   --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
