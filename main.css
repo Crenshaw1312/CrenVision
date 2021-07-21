@@ -908,43 +908,6 @@ margin-right: 10px;
 }
 .listRow-1iDGel:hover {
   background: transparent !important;
-} 
-/* more random shit... */
-.root-3QyAh1 .tabBar-3nvOPa, .tabBarItem-3dfX8P {
-  justify-content: center;
-  border-radius: var(--bubble-radius-small);
-}
-.root-3QyAh1 .tabBarContainer-37hZsr {
-  padding-top: 20px;
-}
-.root-3QyAh1 .tabBar-3nvOPa{
-  margin-bottom: 15px;
-}
-  /* your avatar size n' shit */
-.root-3QyAh1 .topSection-y3p-_D .mask-1l8v16.svg-2V3M55 {
-  width: var(--user-modal-avatar-size);
-  height: var(--user-modal-avatar-size);
-}
-.root-3QyAh1 .topSection-y3p-_D .avatar-AvHqJA.wrapper-3t9DeA {
-  left: var(--user-modal-avatar-position-x);
-  top: var(--user-modal-avatar-position-y);
-}
-  /* positioning */
-.root-3QyAh1 .customStatusActivity-nmH3DF {
-  padding-bottom: 0px;
-}
-.root-3QyAh1 .headerTop-547GTz {
-  top: 6vh;
-}
-.root-3QyAh1 .badgeList-1R1WgZ {
-  justify-content: center;
-}
-.root-3QyAh1 .relationshipButtons-pUQVkf {
-  margin-top: 15px !important;
-}
-.root-3QyAh1 .lookFilled-1Gx00P.colorGreen-29iAKY {
-  padding-left: 0px;
-  max-width: 125px;
 }
 /* button thing */
 .connectedAccountOpenIcon-E5wGF4 {
