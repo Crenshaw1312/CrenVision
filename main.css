@@ -32,14 +32,14 @@
 */
 :root {
   /*Main Stuff*/
-  --main-color: rgba(148, 2, 2, 0.253);
+  --main-color: rgba(17, 8, 61, 0.335);
   --hover-color: rgba(255, 255, 255, 0.337);
   --success-color: #43b581;
   --danger-color: #982929;
   --interactive-active: pink;
   --url-color: rgb(187, 168, 255); 
 /*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
-  --main-image: url(https://media.discordapp.net/attachments/818899863940366406/854840090647592960/199240187_898359471086367_5947425499359738058_n.png); /* an image with duller colors looks nice on backdrop */
+  --main-image: url(https://images.wallpaperscraft.com/image/girl_night_art_147234_5000x6637.jpg); /* an image with duller colors looks nice on backdrop */
 
   /* glasscord */
   --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
@@ -50,7 +50,7 @@
   --bubble-radius-big: 20px;
   --bubble-radius-small: 10px;
 
-  /*Appearences of main sections*/
+  /*Appearences of main sections */
   --background-image: var(--main-image);
   --background-shading: 20%;
   --background-position: center;
@@ -79,6 +79,29 @@
   --user-popout-grayscale: 0%;
   --user-popout-invert: 10%;
   --user-popout-blur: 0px;
+  --user-popout-avatar-size: 95px;
+  --user-popout-avatar-position-x: 32%; /*higher, more to right, suggested: 1-10 */
+  --user-popout-avatar-position-y: 5.5% !important;
+
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 100%; /* the lighter the less you see the user's background, and more the one you set prior (does make the background darker tho for those that don't ahve a usrbg)*/
+  --user-modal-contrast: 100%;
+  --user-modal-saturation: 100%;
+  --user-modal-grayscale: 10%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 0px;
+  --user-modal-avatar-size: 200px;
+  --user-modal-avatar-position-x: 35%; /*higher, more to right, 1-30 or so */
+  --user-modal-avatar-position-y: -6.5vh !important; /* -6.5 vertical, -15.5 horizantal */
+  --user-modal-banner-opacity:.5;
+  --user-modal-banner-blur:blur(2.6px);
 
   --backdrop-overlay: none;
   --backdrop-image: var(--main-image);
@@ -123,7 +146,7 @@
   /* Chat Bubble Coloring */
   --message-mentioned-color: rgba(105, 15, 83, 0.5);
   --message-personal-color: rgba(89, 0, 255, 0.35);
-  --message-other-color: rgba(0, 0, 0, 0.5);
+  --message-other-color: rgba(34, 34, 34, 0.253);
   --message-hover-color: rgba(255, 192, 203, 0.226);
   /* scroll to bottom to see how to add custom ones per user ID if you want to give specific people colors */
   --message-max-width: 400px;
@@ -141,15 +164,6 @@
   --container: 40px;
   --server-container-padding: 200px;
   --sticker-size: 75px;
-  /* VERTICAL */
-    /*popout*/
-  --user-popout-avatar-size: 95px;
-  --user-popout-avatar-position-x: 32%; /*higher, more to right, suggested: 1-10 */
-  --user-popout-avatar-position-y: 8% !important;
-    /*modal*/
-  --user-modal-avatar-size: 200px;
-  --user-modal-avatar-position-x: 35%; /*higher, more to right, 1-30 or so */
-  --user-modal-avatar-position-y: -6.5vh !important; /* -6.5 vertical, -15.5 horizantal */
 
 
   /* Horizantal Server List */
@@ -163,7 +177,7 @@
   --rs-small-width: 2px;
   --rs-medium-width: 3px;
   --rs-large-width: 4px;
-  --avatar-roundness: 30%;
+  --rs-avatar-shape: 35%;
   --rs-online-color: var(--online-color);
   --rs-idle-color: var(--idle-color);
   --rs-dnd-color: var(--dnd-color);
@@ -868,13 +882,12 @@ margin-right: 10px;
 
 /* USER MODAL */
 /* Compact Expanded Popouts - Leeprky#2063# */
-:root{--premium-size:480px;--premium-opacity:.25;--premium-blur:blur(2.6px)} /*50px For Banner | 400px For Full*/
 .theme-dark .root-1gCeng .body-r6_QPy,.topSection-y3p-_D .tabBarContainer-37hZsr .tabBar-3nvOPa,.tabBarItem-3dfX8P{display:table;margin-bottom:15px;font-size:16px;margin-left:8px}
 .theme-dark .root-1gCeng .tabBarContainer-37hZsr{margin-top:150px}
 .nameTag-ECvD8P{top:80px;left:20px}
 .top-28JiJ- .item-PXvHYJ,.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active{border-bottom-color:transparent;border-bottom:transparent;top:-50px}
 .body-r6_QPy{position:absolute;background-color:transparent;left:250px;top:30px;height:350px;width:400px}
-.profileBannerPremium-35utuo{width:700px;height:475px;top:0;height:var(--premium-size);background-position:center;background-size:cover;opacity:var(--premium-opacity);position:absolute;filter:var(--premium-blur)}
+.profileBannerPremium-35utuo{width:700px;height:475px;top:0;height:480px;background-position:center;background-size:cover;opacity:var(--user-modal-banner-opacity);position:absolute;filter:var(--user-modal-banner-blur)}
 .profileBanner-33-uE1, .customStatusText-2opeSw,.actionButton-3vN-m0,.badgeList-1R1WgZ,.banner-2QYc2d:hover .premiumIconWrapper-1A-UH5{display:none}
 .actionsProfile-jEtjVX{position:absolute;margin-top:150px;margin-left:-0}
 .userInfoSection-q_35fn+.userInfoSection-q_35fn,.tabBarContainer-37hZsr{border: none;}
