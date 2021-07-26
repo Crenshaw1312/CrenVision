@@ -1,0 +1,193 @@
+/*give all usernames a pill in chat*/
+[data-is-author-self="false"] .header-23xsNx {
+    background-color: var(--chat-username-pill-color-other);
+  }
+  .message-2qnXI6 .header-23xsNx {
+    border-radius: var(--bubble-radius-big);
+    background-color: var(--chat-username-pill-color-other);
+    padding: 3px;
+    margin-right: 7.5px !important;
+  }
+  [data-is-author-self="true"] .header-23xsNx {
+    display: none;
+  }
+  
+  /* Message Border */
+  .markup-2BOw-j:not(.slateTextArea-1Mkdgw){
+    padding-bottom:4px;
+    padding-top:4px; 
+    padding-right:0.5vh !important;
+    padding-left:0.5vh !important;
+    border-radius: var(--bubble-radius-small);
+    white-space: pre-wrap !important;
+    box-sizing: border-box !important;
+    width: fit-content !important;
+  }
+  /* Hidden Avatar and TimeStamp For Author */
+  [data-is-author-self="true"] .headerText-3Uvj1Y {
+    display: inline;
+  }
+  [data-is-author-self="true"] .contents-2mQqc9 {
+    display: flex;
+    flex-direction: row-reverse; 
+    flex-wrap: wrap-reverse;
+    margin-right: 10px;
+  }
+  [data-is-author-self="true"] .reactions-12N0jA {
+    display: flexbox;
+    flex-direction: row;
+    margin-left: 100% !important;
+    flex-wrap: wrap-reverse !important;
+  }
+  /* your message box */
+  [data-is-author-self="true"] .markup-2BOw-j {
+    background-color: var(--message-personal-color) !important;
+    width: fit-content;
+    max-width: var(--message-max-width) !important;
+    text-overflow: clip !important;
+    display: inline-block;
+  }
+  [data-is-author-self="true"].message-2qnXI6 {
+    padding-right: 10px !important;
+  }
+  /* other users message box*/
+  [data-is-author-self="false"] .markup-2BOw-j {
+    margin: 0px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    background-color: var(--message-other-color) !important;
+    width: fit-content;
+    max-width: var(--message-max-width) !important;
+    word-wrap: break-word;
+    display: inline-table;
+  }
+  /* fix message reply */
+  [data-is-author-self="true"] .repliedMessage-VokQwo {
+    flex-direction: row-reverse;
+    margin-right: 40px;
+    margin-bottom: 2px;
+  }
+  .repliedMessage-VokQwo:before {
+    display: none;
+  }
+  [data-is-author-self="false"] .replyBadge-r1su3o {
+    transform: scaleX(-1);
+  }
+  /* Chatpartner Messages */
+  [data-is-author-self="false"] .contents-2mQqc9 {
+    flex-direction: row;
+    max-width: 100% !important;   
+  }
+  /* Message from powercord/clyde */
+  .ephemeral-1PsL1r{
+    background-color: var(--message-other-color) !important;
+    backdrop-filter: brightness(30%);
+    border-radius: var(--bubble-radius-small) !important;
+  }
+  /* Mentioned */
+  .mentioned-xhSam7 {
+    background-color: var(--message-mentioned-color);
+    border-radius: var(--bubble-radius-big);
+  }
+  .mentioned-xhSam7::before, .ephemeral-1PsL1r::before{
+    background-color: var(--url-color);
+    margin-top: var(--bubble-radius-small);
+    margin-bottom: var(--bubble-radius-small);
+  }
+  /* Images To Right Side */
+  [data-is-author-self="true"] .container-1ov-mD {
+    display: flex;
+    flex-direction: row-reverse !important; 
+    flex-wrap: wrap;
+  }
+  /* For Editing Messages, Editing Container */
+  .slateTextArea-1Mkdgw {
+    position: relative !important;
+    height:fit-content;
+    border-radius: var(--bubble-radius-small);
+  }
+  /* invite box */
+  .theme-dark .wrapper-35wsBm {
+    border-radius: var(--bubble-radius-small);
+    background-color: var(--bubble-color) !important;
+  }
+  /* Store item link and other vertical embeds */
+  .embedVertical-W5-T0m {
+    background-color: var(--message-other-color) !important;
+  }
+  /* audio files */
+  .theme-dark .wrapper-2TxpI8 {
+    background-color: var(--message-other-color);
+    border-radius: var(--bubble-radius-small);
+  }
+  /* stickers are too big */
+  .container-1ov-mD .assetWrapper-3GNt0z {
+    height: var(--sticker-size) !important;
+    width: var(--sticker-size) !important;
+  }
+  /* spotify shit iframe */
+  .embedSpotify-tvxDCr {
+    border-radius: var(--bubble-radius-small) !important;
+  }
+  /* on hover */
+  .message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover:not(.ephemeral-1PsL1r) {
+    background: linear-gradient(to right, var(--bubble-color), var(--message-hover-color) 5% 95%, var(--bubble-color));
+  }
+  /* channels and server name */
+  .container-3w7J-x {
+    border-radius: var(--bubble-radius-big);
+    background-color: var(--bubble-color);
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .container-3w7J-x .animatedContainer-1NSq4T {
+    border-top-left-radius: var(--bubble-radius-big) !important;
+    border-top-right-radius: var(--bubble-radius-big) !important;
+  }
+  /* message gray line/spine */
+  .spine-5jbOmI.systemMessageSpine-3ZKfiO {
+    display: none;
+  }
+  
+  /* MESSAGES */
+/* Make message backgrounds clear and give shadowing*/
+.messageContent-2qWWxC, .embed-IeVjo6,  .messageContent-2qWWxC, .scrollableContainer-2NUZem {
+  background-color: transparent !important;
+}
+.channelTextArea-2VhZ6z:focus-within {
+  box-shadow: none !important;
+}
+
+/* reply-has-image icon begone */
+.repliedMessage-VokQwo .repliedTextContentIcon-1ivTae {
+  display: none;
+}
+/* message drop down (like pins and personal notes) */
+.layer-v9HyYc .messagesPopout-24nkyi {
+  background-color: var(--bubble-color);
+  backdrop-filter: brightness(30%);
+}
+
+
+  /* reactions */
+.header-23xsNx .pronoundb-pronouns {
+  color: var(--muted-color) !important;
+}
+.reaction-1hd86g.reactionMe-wv5HKu > div > div > div  {
+  color: white !important;
+}
+.reaction-1hd86g, .reaction-1hd86g.reactionMe-wv5HKu {
+  border-color: var(--url-color);
+  border-radius: var(--bubble-radius-big);
+}
+.reaction-1hd86g.reactionMe-wv5HKu {
+  background-color: var(--message-personal-color) !important;
+}
+.reaction-1hd86g:not(.reaction-1hd86g.reactionMe-wv5HKu) {
+  background-color: var(--message-other-color) !important;
+}
+
+/* Embed Title Url to URL color */
+.embed-IeVjo6 .embedTitleLink-1Zla9e {
+  color: var(--url-color) !important;
+}

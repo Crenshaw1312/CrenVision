@@ -1,0 +1,53 @@
+/* DISPLAY NONE BANK */
+/* currently selected clear */
+.privateChannels-1nO12o .channel-2QD9_O.selected-aXhQR6 .layout-2DM8Md:after {
+background: none;
+}
+.privateChannels-1nO12o .channel-2QD9_O.selected-aXhQR6 .layout-2DM8Md:after {
+animation: none;
+}
+/* little icon to show there's a presence */
+.icon-15YQ1T {
+display: none;
+}
+/* no description of DnD and invis with status picker */
+.description-2L932D {
+display: none;
+}
+/* spotify display icon */
+.theme-dark .newPopoutActivityStyles .spotifyIcon-2J9kSv{
+  display: none;
+}
+/* edit banner pencil*/
+.pencilIcon-XSi-VE {
+  display: none;
+}
+/*set a server name and custom pfp */
+.setIdentityLink-3lcnXW {
+  display: none;
+}
+/* NO NITRO CHATBAR BUTTON */
+.buttons-3JBrkn > .button-38aScr > :not(.translateButton-DhP9x8) {display: none}
+.privateChannels-1nO12o .channel-2QD9_O[href="/store"] {
+display: none;
+}
+/* NO HELP BUTTON */
+.iconWrapper-2OrFZ1[aria-label=Help] {
+display: none;
+} 
+/* misc un-needed buttons */
+[aria-label="Member List"], [aria-label ^= "Mute channel"], [aria-label ^= "Open GIF"] {
+  display: none;
+}
+/* REMOVE INFO THING (remove this snippet if you have premium) */
+.powercord-spotify .spotify-buttons{
+  display: none
+}
+/* fuck off "you need 2fa" notice I know it damnit*/
+.channelNotice-1-XFjC {
+  display: none
+}
+/*Remove underline for when hovering over username in chat*/
+.applicationName-1-Uq7y.clickable-1bVtEA:hover, .commandName-1klrjB.clickable-1bVtEA:hover, .username-1A8OIy.clickable-1bVtEA:hover {
+  text-decoration: none !important;
+}

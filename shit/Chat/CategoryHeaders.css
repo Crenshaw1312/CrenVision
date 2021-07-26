@@ -1,0 +1,26 @@
+/* COLORATION HEADERS MEMBER + CATEGORIES + SETTINGS + DM*/
+/* Member list */
+.membersGroup-v9BXpm::after{
+    color: var(--headers-base-color) !important;
+  }
+  /* channel */
+  .name-3l27Hl::before, .side-8zPYf6 .header-2RyJ0Y::before, .membersGroup-v9BXpm::before, .privateChannels-1nO12o .privateChannelsHeaderContainer-3NB1K1::before {
+    background: linear-gradient(to left, var(--headers-base-color)50%, transparent) !important;
+  }
+  .name-3l27Hl, .side-8zPYf6 .header-2RyJ0Y, .membersGroup-v9BXpm, .privateChannels-1nO12o .privateChannelsHeaderContainer-3NB1K1 {
+    color: var(--headers-base-color) !important;
+  }
+  .name-3l27Hl::after, .side-8zPYf6 .header-2RyJ0Y::after, .membersGroup-v9BXpm::after, .privateChannels-1nO12o .privateChannelsHeaderContainer-3NB1K1::after {
+    background: linear-gradient(to right, var(--headers-base-color)50%, transparent) !important;
+  }
+  .addButtonIcon-2CbG1X {
+    color: var(--headers-base-color)
+  }
+  .title-3qD0b- .topic-TCb_qw {
+    color: var(--text-normal);
+  }
+  /* mention/channel highlight */
+  .topic-TCb_qw .wrapper-3WhCwL, .markup-2BOw-j .wrapper-3WhCwL {
+    background-color: var(--bubble-color) !important;
+    color: var(--channel-text-selected) !important;
+  }

@@ -1,0 +1,73 @@
+/* CHAT BACKGROUND */
+.chatContent-a9vAAp, .peopleColumn-29fq28 {
+  border-radius: var(--bubble-radius-big);
+  background-color: var(--bubble-color) !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* message jump and unreads (in chat and channel list) */
+.newMessagesBar-265mhP, .barButtonMain-3K-jeJ, .barButtonBase-2uLO1z, .unread-1xRYoj, .mention-1f5kbO {
+  background-color: var(--url-color);
+  backdrop-filter: brightness(80%);
+  border-radius: var(--bubble-radius-big);
+  margin-top: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.unreadBar-3t3sYc:before, .unreadBar-3t3sYc:after {
+  display: none;
+}
+  
+/* auto complete chatbar */
+.autocomplete-1vrmpx .autocompleteInner-zh20B_ {
+  background-color: var(--bubble-color);
+  border-radius: var(--bubble-radius-big);
+  backdrop-filter: brightness(50%);
+}
+.autocomplete-1vrmpx .selected-1Tbx07 {
+  background-color: var(--bubble-color) !important;
+  border-radius: var(--bubble-radius-small);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Hides Textbox when you don't have permission to talk in the channel */
+.channelTextAreaDisabled-8rmlrp > div {
+  display: none
+}
+
+/* JUMP TO PRESENT BAR */
+.jumpToPresentBar-G1R9s6, .jumpToPresentBar-G1R9s6:hover, .barBase-1c2Rfb {
+  background: var(--bubble-color);
+  border-radius: var(--bubble-radius-small);
+  margin-bottom: 3px;
+}
+
+/* Chat bar clear, or whatever... */
+.channelTextArea-2VhZ6z, .scrollableContainer-2NUZem {
+  background-color: var(--chatbar-color);
+}
+.channelTextArea-2VhZ6z .textArea-12jD-V .placeholder-37qJjk {
+  display: none;
+}
+
+/* START OF CHAT GREETING (Welcome to #general) */
+.container-3RCQyg{
+  background-color: var(--bubble-color);
+  border-radius: var(--bubble-radius-big);
+  padding: 3%;
+}
+.container-3RCQyg .description-1sDbzZ {
+  display: none;
+}
+
+/* CORRECT THE AUTO QUOTER */
+#a11y-hack .rq-inline {
+  background: var(--bubble-color) !important;
+}
+.rq-error {
+  display: none;
+}

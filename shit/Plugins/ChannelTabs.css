@@ -1,0 +1,35 @@
+/* CHANNEL TABS */
+.channelTabs-tabContainer {
+  min-height: calc(var(--channelTabs-tabHeight) + 14px) !important;
+  position: relative;
+}
+
+.channelTabs-fav {
+  background-color: var(--channelTabs-favColor) !important;
+  border-radius: 15px !important;
+}
+.channelTabs-tab {
+  border-radius: 20px !important;
+}
+.channelTabs-favContainer, .channelTabs-tabContainer {
+  background-color: var(--bubble-color) !important;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.channelTabs-tabContainer {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.channelTabs-closeTab {
+  margin-top: 3px;
+  background-color: var(--url-color) !important;
+}
+.channelTabs-tab.channelTabs-selected {
+  background-color: var(--channelTabs-selectedColor) !important;
+}
+.channelTabs-tab:not(.channelTabs-selected):hover {
+  background-color: var(--channelTabs-selectedColor) !important;
+}
+.channelTabs-tabIcon {
+  border-radius: var(--channelTabs-iconRadius) !important;
+}

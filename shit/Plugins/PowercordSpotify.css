@@ -1,0 +1,13 @@
+/* Removing clearvision mark at bottom bc spotify plugin looks bad with it, leave the top one tho */
+/* also remove time stamps */
+.container-3baos1::before, .container-3baos1::after, .spotify-seek-elements {
+    display: none !important;
+}
+/* spotify thing margin */
+.container-3baos1 {
+    margin-bottom: 13px;
+}
+/* spotify seek bar */
+.powercord-spotify .spotify-seek-bar-progress {
+    display: inline-block;
+}

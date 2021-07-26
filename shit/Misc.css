@@ -1,0 +1,42 @@
+/* SCROLL BARS GO AWAY */
+/* scroll bars begone
+* From: https://github.com/NYRI4/Comfy/blob/master/betterdiscord/comfy.user.css
+*/
+::-webkit-scrollbar { display: none !important;}.note-3HfJZ5 { margin-right: 0; }.content-1x5b-n { margin: 0 !important; border-radius: 0; }.mainContent-u_9PKf { padding-left: 8px;}.member-3-YXUe, [id*="private-channels-"] { margin: 0; max-width: unset; }.layout-2DM8Md { border-radius: 0; padding: 0 16px;}.unread-2lAfLh { z-index: 1;}.content-1LAB8Z, .item-1tOPte { margin-right: 8px;}.scroller-2hZ97C { padding-left: 0;}.scroller-2hZ97C > .content-3YMskv, .buttons-3JBrkn, .messagesPopout-24nkyi { padding-right: 10px !important; }.inviteRow-2L02ae {border-radius: 0; padding-left: 15px;}
+
+/*Change topmost watermark, I can't share it with this changed, customize it yourself personally*/
+.typeWindows-1za-n7>.wordmark-2iDDfm:before {
+    content: var(--watermark-override);
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    text-shadow: 0 0 3px #000;
+}
+.typeWindows-1za-n7>.wordmark-2iDDfm:after {
+  display: none;
+}
+.typeWindows-1za-n7 > .wordmark-2iDDfm > svg {
+  display: none;
+}
+.typeWindows-1za-n7 {
+  background-color: var(--bubble-color);
+  margin-top: -2px;
+  margin-bottom: 3px;
+}
+
+  /* make invite to guild list look better */
+.submenuPaddingContainer-fiOCHc [aria-activedescendant ^= "user-context-invite-to-server"] {
+  max-height: 300px !important;
+  overflow-y: scroll;
+}
+
+/* I have no idea what this did/does, so imma leave it */
+.content-1o0f9g {
+  background-color: var(--bubble-color);
+  color: white;
+}
+  /* buttons */
+.appMount-3lHmkl .lookOutlined-3sRXeN.colorWhite-rEQuAQ, .appMount-3lHmkl .lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
+  color: #fff;
+  background: transparent;
+  border-color: transparent;
+}

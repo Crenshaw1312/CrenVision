@@ -1,0 +1,47 @@
+/* CHANNEL HEADER */
+#app-mount .sidebar-2K8pFh {
+  background: none;
+}
+.title-3qD0b-, .base-3dtUhz .container-1r6BKw {
+  background-color: var(--bubble-color) !important;
+  border-radius: var(--bubble-radius-big);
+  position: relative !important;
+  margin-left: 15px !important;
+  margin-top: 10px;
+  left: 0px !important;
+  width: calc(100% - 27px);
+}
+.searchBar-3dMhjb {
+  border-radius: 15px !important;
+}
+.iconWrapper-2OrFZ1, .clickable-3rdHwn {
+  background-color: none;
+}
+  
+/* inbox */
+.container-enaOkj {
+  background-color: var(--bubble-color);
+  backdrop-filter: brightness(50%);
+}
+  
+/* pins */
+.layer-v9HyYc .messagesPopout-24nkyi [class="avatar-1BDn8e"], .layer-v9HyYc .messagesPopout-24nkyi .header-23xsNx {
+  display: none;
+}
+
+  /* CHANGE BUTTONS COLOR */
+.icon-GhnIRB, .icon-22AiRD {
+  color: var(--bubble-color);
+  filter: invert(20%);
+}
+
+/* Title hashtag/waving dude/at sign symbol */
+.container-1r6BKw .children-19S4PO .icon-22AiRD {
+  color: rgba(255, 255, 255, 0.672);
+}
+
+/* ONLY SHOW SEARCH ON HOVER */
+.search-2oPWTC:not(.open-6_Y_aH) .searchBar-3dMhjb { width: 27px; transition: 0.25s; background-color: transparent;}
+.search-2oPWTC:not(.open-6_Y_aH):hover .searchBar-3dMhjb { width: 140px; transition: 0.25s;}
+.search-2oPWTC:not(.open-6_Y_aH) .iconContainer-O4O2CN { transform: scale(1.2); transition: 0.25s;}
+.search-2oPWTC:not(.open-6_Y_aH):hover .iconContainer-O4O2CN { transform: scale(1); transition: 0.25s;}

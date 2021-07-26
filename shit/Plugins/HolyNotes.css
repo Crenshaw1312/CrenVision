@@ -1,0 +1,10 @@
+/* notes plugin modal */
+.modal-yWgWj-.hn-notebook {
+    border-radius: var(--bubble-radius-big) !important;
+    background-image: var(--user-modal-image);
+    background-position: var(--user-modal-position);
+    background-size: var(--user-modal-size);
+  }
+  .theme-dark .footer-2gL1pp {
+    display: none;
+  }

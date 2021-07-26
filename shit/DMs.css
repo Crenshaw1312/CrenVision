@@ -1,0 +1,51 @@
+/* DMS */
+/* friendos list */
+.peopleColumn-29fq28 {
+    margin-right: 10px;
+  }
+  /* List of activites */
+  .theme-dark .outer-1AjyKL {
+    background-color: var(--bubble-color);
+    border-radius: 20px;
+  }
+  .theme-dark .inset-3sAvek {
+    border-radius: var(--bubble-radius-small);
+  }
+  .headerIcon-10Jegm {
+    display: none;
+  }
+  .nowPlayingColumn-2sl4cE {
+    background-color: var(--bubble-color);
+    border-radius: var(--bubble-radius-big);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  /* look for friends you don't have */
+  .searchBarComponent-32dTOx {
+    border-radius: var(--bubble-radius-big) !important;
+  }
+  /* dm list */
+  .privateChannels-1nO12o {
+    background-color: var(--bubble-color) !important;
+    border-radius: var(--bubble-radius-big);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+/* DM +friend list Stuph*/
+.privateChannels-1nO12o .channel-2QD9_O.selected-aXhQR6 .layout-2DM8M {
+    background-color: pink !important;
+}
+.privateChannels-1nO12o .privateChannelsHeaderContainer-3NB1K1 .privateChannelRecipientsInviteButtonIcon-3A3uTc, .privateChannels-1nO12o .privateChannelsHeaderContainer-3NB1K1 .privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {
+    color: #fff !important;
+}
+/* close button */
+.closeIcon-rycxaQ {
+    color: white;
+}
+/* activity name letters, make white like member list */
+.activity-2myFBH strong {
+    color: #fff;
+}

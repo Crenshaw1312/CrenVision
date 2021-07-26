@@ -1,0 +1,22 @@
+ /* settings menu */
+ #app-mount .menu-3sdvDG {
+    border-radius: 10px;
+  }
+  .header-2mZ9Ov::before {
+    background-color: pink !important;
+    filter: none !important;
+    border-radius: 10px !important;
+  }
+  /* SETTINGS CHOOSER BAR */
+  .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .side-8zPYf6 {
+    border-radius: var(--bubble-radius-small);
+    margin-top: 10%;
+    background-color: var(--bubble-color) !important;
+  }
+  /* SETTINGS DISPLAY */
+  .contentColumn-2hrIYH, .contentColumnDefault-1VQkGM {
+    background-color: var(--bubble-color);
+    border-radius: var(--bubble-radius-big);
+    margin-top: 45px;
+    margin-bottom: calc(vh - 100px)
+  }
