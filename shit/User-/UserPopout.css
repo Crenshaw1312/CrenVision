@@ -98,6 +98,11 @@
   align-items: center !important;
   -webkit-box-align: center !important;
 }
+/* botato#6883, center emoji in user popout if just emoji */
+.customStatus-oN4ZZY > .customStatusEmoji-3a2-Zo.customStatusSoloEmoji-1tDhmL:only-child {
+  margin-right: auto;
+  margin-left: auto;
+}
 .avatar-37jOim.wrapper-3t9DeA, .avatarUploader-2UF9NL, .avatarUploaderInner-Oiob_P {
   width: var(--user-popout-avatar-size) !important;
   height: var(--user-popout-avatar-size) !important;

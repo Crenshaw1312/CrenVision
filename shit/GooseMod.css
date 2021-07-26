@@ -1,23 +1,23 @@
 /* GOOSEMOD */
 [id="gm-settings-inject"] {
-    border-radius: var(--bubble-radius-big);
-    background-color: var(--bubble-color) !important;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
-  .gm-store-card {
-    background-color: var(--bubble-color) !important;
-    backdrop-filter: brightness(75%);
-  }
-  .gm-store-category {
-    background-color: var(--bubble-color) !important;
-    margin-bottom: 10px !important;
-    border-radius: var(--bubble-radius-big) !important;
-    mask-position: 300px 300px;
-  }
-  .gm-carousel-modal {
-    background-color: var(--bubble-color) !important;
-    border-radius: var(--bubble-radius-big) !important;
-  }
+  border-radius: var(--bubble-radius-big);
+  background-color: var(--bubble-color) !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.gm-store-card {
+  background-color: var(--bubble-color) !important;
+  backdrop-filter: brightness(75%);
+}
+.gm-store-category {
+  background-color: var(--bubble-color) !important;
+  margin-bottom: 10px !important;
+  border-radius: var(--bubble-radius-big) !important;
+  mask-position: 300px 300px;
+}
+.gm-carousel-modal {
+  background-color: var(--bubble-color) !important;
+  border-radius: var(--bubble-radius-big) !important;
+}

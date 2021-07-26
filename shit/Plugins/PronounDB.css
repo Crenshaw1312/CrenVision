@@ -1,0 +1,4 @@
+/* fix space of no pronoun */
+.header-23xsNx > .pronoundb-pronouns:empty {
+    display: none;
+  }

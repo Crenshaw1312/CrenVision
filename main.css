@@ -1,7 +1,7 @@
 /**
  * @name ClearVision
  * @author Crenshaw#1312
- * @version 6.1.0
+ * @version 69.420
  * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.gitlab.io
@@ -12,17 +12,11 @@
 /* BEFORE USING READ DIS */
 /**
 *Requirement: BDFDB plugin
-** https://betterdiscord.app/plugin/BDFDB
+* https://betterdiscord.app/plugin/BDFDB
+*
 *Requirement: Channel Tabs (not really needed, just maeks the server list look not-shit)
-** https://betterdiscord.app/plugin/ChannelTabs
+* https://betterdiscord.app/plugin/ChannelTabs
 */
-
-
-/* required imports */
-@import url('https://clearvision.gitlab.io/v6/main.css'); /* what this whole thing is built on...*/
-@import url('https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css');
-@import url("https://discordstyles.github.io/HorizontalServerList/base.css");
-@import url(./base.css);
 
 /**
 * Hewowo :3
@@ -31,6 +25,13 @@
 * I do JS, JSX, CSS, I then dabble in vue, python, and html. I'm learning C and C++!
 * Uhhhhh idfk what else you'd want, feel dree to DM me, they're always open.
 */
+
+/* required imports */
+@import url('https://clearvision.gitlab.io/v6/main.css'); /* what this whole thing is built on...*/
+@import url('https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css');
+@import url("https://discordstyles.github.io/HorizontalServerList/base.css");
+@import url(./base.css);
+
 :root {
   /*Main Stuff*/
   --main-color: rgba(17, 8, 61, 0.335);
@@ -98,7 +99,6 @@
   --user-modal-grayscale: 10%;
   --user-modal-invert: 0%;
   --user-modal-blur: 0px;
-  --user-modal-avatar-size: 200px;
   --user-modal-avatar-position-x: 35%; /*higher, more to right, 1-30 or so */
   --user-modal-avatar-position-y: -6.5vh !important; /* -6.5 vertical, -15.5 horizantal */
   --user-modal-banner-opacity:.5;
