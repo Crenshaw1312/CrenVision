@@ -5,12 +5,15 @@
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     margin-left: 5px;
+    height: calc(100vw - 16px) !important; 
 }
   /* guidls folder background, idfk it works */
 #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
     background-color: var(--bubble-color);
     filter: brightness(70%);
 }
+
 #app-mount .guilds-1SWlCJ {
   height: calc(100vw - 15px) !important;
+  backdrop-filter: brightness(100%) !important;
 }
