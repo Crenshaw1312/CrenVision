@@ -1,8 +1,8 @@
 {
     "name": "CrenVision",
-    "description": "A highly customizable theme for BetterDiscord and Powercord.",
+    "description": "Crenshaw's edit of ClearVision",
     "version": "69.420",
     "author": "Crenshaw1312 and ClearVision team",
-    "theme": "CrenVision.css",
+    "theme": "CrenVision.scss",
     "license": "Apache-2.0"
 }
