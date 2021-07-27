@@ -29,7 +29,7 @@
 /* required imports */
 @import url('https://clearvision.gitlab.io/v6/main.css'); /* what this whole thing is built on...*/
 @import url('https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css');
-@import url("https://discordstyles.github.io/HorizontalServerList/src/HorizontalServerList.theme.scss");
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://raw.githack.com/Discord-Theme-Addons/statuspicker-plus/master/src/support/StatusPickerPlus.theme.css");
 @import url(./base.css);
 
