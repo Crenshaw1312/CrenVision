@@ -1,10 +1,9 @@
 /**
- * @name ClearVision
- * @author Crenshaw#1312
+ * @name CrenVision
+ * @author Crenshaw#1312 and Clearvison
  * @version 69.420
- * @description Highly customizable theme for BetterDiscord.
- * @source https://github.com/ClearVision/ClearVision-v6
- * @website https://clearvision.gitlab.io
+ * @description Clearvision theme, modded by Crenshaw#1312 to bubbly
+ * @source https://github.com/Crenshaw1312/CrensVision
  * @invite Qx2hyttRsU
  */
 
@@ -28,10 +27,10 @@
 
 /* required imports */
 @import url('https://clearvision.gitlab.io/v6/main.css'); /* what this whole thing is built on...*/
+@import url("https://Crenshaw1312.github.io/CrenVision/base.css"); /* the shit you want form me */
 @import url('https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css');
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://raw.githack.com/Discord-Theme-Addons/statuspicker-plus/master/src/support/StatusPickerPlus.theme.css");
-@import url(./base.css);
 
 :root {
   /*Main Stuff*/

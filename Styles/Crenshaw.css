@@ -8,31 +8,20 @@
  * @invite Qx2hyttRsU
  */
 
-
-/* BEFORE USING READ DIS */
-/**
-*Requirement: BDFDB plugin
-** https://betterdiscord.app/plugin/BDFDB
-*Requirement: Channel Tabs (not really needed, just maeks the server list look not-shit)
-** https://betterdiscord.app/plugin/ChannelTabs
-*/
-
-
-/* required imports */
+/* REQUIRED IMPORTS */
 @import url("https://crenshaw1312.github.io/CrenVision/main.css");
 
-/* fonts */
-/* Architects Daughter (hand writting, my fav)*/ @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-/* PT sans (normal)*/ @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-/* Nunito (normal) */ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); /* Architects Daughter */
 
-/* not required */
+/* NOT REQUIRED */
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css'); /* the all-loved radial status */
 @import url("https://raw.githack.com/Controlfreak707/Channel-Icons/main/channelicons.theme.css"); /* make chat icons cool, remove quotes to enable */
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css"); /* USRBG POPOUTS */
 @import url("https://nyri4.github.io/Discolored/main.css"); /* makes discord's colorless images, colored! */
-/*@import url('https://mentalscars.github.io/Patch/transparency.css'); /* make it glasscord friendly, thanks cruxie#7861 (may need restart) */
+/*@import url('https://mentalscars.github.io/Patch/transparency.css'); /* make it glasscord friendly, thanks cruxie#7861 (may need restart and may not work?) */
 
+/* ROOT */
 :root {
   /*Main Stuff*/
   --main-color: rgba(17, 8, 61, 0.335);
@@ -212,70 +201,9 @@
 	--USRBG-banner-height: 120px !important;
 }
 
-/* your codey-wodey stuph */
-.header-23xsNx > .pronoundb-pronouns:empty {
-  display: none;
-}
+/* YOUR CODE */
 
-/* remove useless crap */
+/* Remove un-needed optins */
 .wrapper-2jXpOf .content-1x5b-n .actionIcon-PgcMM2, [id='user-context-user-profile'], [id="user-context-mention"], [id="user-context-call"], [id="user-context-note"], [id="user-context-user-volume"], [id="user-context-block"], [id="user-context-remove-friend"], [aria-label="Open sticker picker"], .setIdentityLink-1t8Ahd, [id="message-notebook"], [id="message-copyrawmessage-copy-message"], [id="message-add-reaction"], [id="message-edit"], [id="message-pin"], [id="message-reply"], [id="guild-context-guild-settings"], [id="guild-context-privacy"], [id="guild-context-create-channel"], [id="guild-context-create-category"] {
   display: none;
-}
-
-/* botato#6883, center emoji in user popout if just emoji */
-.customStatus-oN4ZZY > .customStatusEmoji-3a2-Zo.customStatusSoloEmoji-1tDhmL:only-child {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-/* custom color per user, via their ID */
-/* Aleques */
-[data-author-id="389250862347976705"] .markup-2BOw-j, [data-author-id="389250862347976705"] .header-23xsNx{
-	background-color: rgba(255, 0, 179, 0.3) !important;
-}
-
-/* Another Red/astyx */
-[data-author-id="832112307554353152"] .markup-2BOw-j, [data-author-id="832112307554353152"] .header-23xsNx {
-  background-color: #0dffc35e !important;
-}
-
-/* Devnote */
-[data-author-id="622146791659405313"] .markup-2BOw-j, [data-author-id="622146791659405313"] .header-23xsNx {
-  background-color: #e67d2259 !important;
-}
-
-/* Kira */
-[data-author-id="511501021336436749"] .markup-2BOw-j, [data-author-id="511501021336436749"] .header-23xsNx {
-  background: linear-gradient(90deg, #e7b17763, #2a292f65) !important;
-}
-
-/* Raiden*/
-[data-author-id="848041050211614780"] .markup-2BOw-j, [data-author-id="848041050211614780"] .header-23xsNx {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-}
-
-/* WickedWizard */
-[data-author-id="719421577086894101"] .markup-2BOw-j, [data-author-id="719421577086894101"] .header-23xsNx {
-  background-color: rgba(135, 207, 235, 0.418) !important;
-}
-
-/* Mayo */
-[data-author-id="719421577086894101"] .markup-2BOw-j, [data-author-id="719421577086894101"] .header-23xsNx {
-  background-color: rgba(135, 207, 235, 0.418) !important;
-}
-
-/* Sponge */
-[data-author-id="564071610143866894"] .markup-2BOw-j, [data-author-id="564071610143866894"] .header-23xsNx {
-  background-color: rgba(255, 0, 0, 0.418) !important;
-}
-
-/* Bulldog */
-[data-author-id="325421220529045505"] .markup-2BOw-j, [data-author-id="325421220529045505"] .header-23xsNx {
-  background-color: rgba(128, 0, 128, 0.274) !important;
-}
-
-/* blox */
-[data-author-id="748529326621982732"] .markup-2BOw-j, [data-author-id="748529326621982732"] .header-23xsNx {
-  background-color: rgba(173, 216, 230, 0.418) !important;
 }

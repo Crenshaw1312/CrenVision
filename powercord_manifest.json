@@ -3,6 +3,6 @@
     "description": "A highly customizable theme for BetterDiscord and Powercord.",
     "version": "69.420",
     "author": "Crenshaw1312 and ClearVision team",
-    "theme": "main.css",
+    "theme": "CrenVision.css",
     "license": "Apache-2.0"
 }
