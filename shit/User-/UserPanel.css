@@ -26,3 +26,17 @@
     opacity: 1;
     pointer-events: all;
 }
+
+#app-mount #status-picker {
+    margin-bottom: 15%;
+    max-width: var(--channels-width);
+    backdrop-filter: brightness(90%);
+}
+#app-mount #status-picker .scroller-3BxosC #status-picker-custom-status {
+    width: calc(var(--channels-width) - 6px);
+    background-color: transparent;
+    margin-left: -20px;
+}
+#app-mount #status-picker .scroller-3BxosC {
+    margin-left: -10px;
+}

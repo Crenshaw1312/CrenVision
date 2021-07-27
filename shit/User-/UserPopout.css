@@ -39,7 +39,7 @@
 }
 .userPopout-xaxa6l .aboutMeBody-3GuvKk {
   overflow-y: scroll;
-  min-width: 15.7vh;
+  width: auto !important;
 }
 .userPopout-xaxa6l .base-1x0h_U.muted-3-7c5L, .userPopout-xaxa6l .activity-2INFPu .headerTextNormal-2mGWX3 {
   background-color: var(--bubble-color);
