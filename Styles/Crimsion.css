@@ -1,10 +1,9 @@
 /**
- * @name CrenVision
+ * @name CrenVision - Crimsion
  * @author Crenshaw#1312 and Clearvison
  * @version 69.420
- * @description Clearvision theme, modded by Crenshaw#1312 to bubbly
- * @source https://github.com/Crenshaw1312/CrensVision
- * @website https://clearvision.gitlab.io
+ * @description CrenVision theme, modled after CreArt's Crimsion
+ * @source https://github.com/Crenshaw1312/CrensVision/Styles/Crimsion.css
  * @invite Qx2hyttRsU
  */
 
@@ -12,7 +11,7 @@
 @import url("https://crenshaw1312.github.io/CrenVision/main.css");
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); /* Architects Daughter */
+
 
 /* NOT REQUIRED */
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css'); /* the all-loved radial status */
@@ -24,7 +23,7 @@
 /* ROOT */
 :root {
   /*Main Stuff*/
-  --main-color: rgba(17, 8, 61, 0.335);
+  --main-color: rgba(216, 18, 58, 0.25);
   --hover-color: rgba(255, 255, 255, 0.337);
   --success-color: #43b581;
   --danger-color: #982929;
@@ -32,7 +31,7 @@
   --interactive-normal: var(--headers-base-color);
   --url-color: rgb(187, 168, 255); 
 /*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
-  --main-image: url(https://images.wallpaperscraft.com/image/girl_night_art_147234_5000x6637.jpg); /* an image with duller colors looks nice on backdrop */
+  --main-image: none; /* an image with duller colors looks nice on backdrop */
 
   /* glasscord */
   --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
@@ -56,7 +55,7 @@
   --background-grayscale: 10%;
   --background-invert: 5%;
   --background-blur: 0px;
-  --background-overlay: rgba(12, 0, 83, 0.3);
+  --background-overlay: var(--main-color);
 
   --user-popout-image: var(--background-image);
   --user-popout-position: var(--background-position);
@@ -96,7 +95,7 @@
   --user-modal-banner-opacity:.75;
   --user-modal-banner-blur:blur(2.6px);
 
-  --backdrop-overlay: none;
+  --backdrop-overlay: rgba(229, 39, 66, 1.0);
   --backdrop-image: var(--main-image);
   --backdrop-position: var(--background-position);
   --backdrop-size: var(--background-size);
@@ -130,7 +129,7 @@
   --offline-color: #808080;
   
   /* text */
-  --main-font: Architects Daughter;
+  --main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
   --code-font: Consolas;
   --text-normal: rgba(255, 255, 255, .75);
   --text-muted: rgba(128, 128, 128, 0.281);
@@ -138,8 +137,8 @@
 
   /* Chat Bubble Coloring */
   --message-mentioned-color: rgba(105, 15, 83, 0.5);
-  --message-personal-color: rgba(89, 0, 255, 0.35);
-  --message-other-color: rgba(34, 34, 34, 0.253);
+  --message-personal-color: rgba(204, 6, 50, .5);
+  --message-other-color: rgba(204, 6, 50, .5);
   --message-hover-color: rgba(255, 192, 203, 0.226);
   /* scroll to bottom to see how to add custom ones per user ID if you want to give specific people colors */
   --message-max-width: 400px;

@@ -1,0 +1,182 @@
+/**
+ * @name ClearVision Winter
+ * @author Zerthox
+ * @version 6
+ * @description ClearVision v6.
+ * @source https://github.com/ClearVision/v6
+ * @website https://clearvision.gitlab.io/join
+ */
+
+/* IMPORT CSS */
+@import url("https://crenshaw1312.github.io/CrenVision/main.css");
+
+:root {
+    /*Main Stuff*/
+	--main-color: #66aacc5b; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--hover-color: #447799; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+	--success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+    --interactive-active: var(--main-color);
+    --interactive-normal: var(--headers-base-color);
+    --url-color: var(--main-color); 
+  /*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
+    --main-image: url(https://images.wallpaperscraft.com/image/girl_night_art_147234_5000x6637.jpg); /* an image with duller colors looks nice on backdrop */
+  
+    /* glasscord */
+    --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
+  
+    /*Bubble Coloration*/
+    --bubble-color: var(--main-color); /* a bubble color with the last number being .2 - .5 works best*/
+    --headers-base-color: #66aacc;
+    --bubble-radius-big: 20px;
+    --bubble-radius-small: 10px;
+  
+    /*Appearences of main sections */
+	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--background-image: url(https://clearvision.gitlab.io/images/winter.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--background-position: center; /* app background position [default: center] */
+	--background-size: cover; /* app background size [default: cover] */
+	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
+	--background-attachment: fixed; /* app background attachment [default: fixed] */
+	--background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--background-contrast: 100%; /* app background contrast [default: 100%] */
+	--background-saturation: 100%; /* app background saturation [default: 100%] */
+	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+	--background-blur: 0px; /* app background blur [default: 0px] */
+  
+	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
+	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
+	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
+	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
+	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
+	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(---background-invert)] */
+	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
+  
+	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
+	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
+	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
+	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
+	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */
+	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(---background-invert)] */
+	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+    --user-modal-avatar-position-x: 35%; /*higher, more to right, 1-30 or so */
+    --user-modal-avatar-position-y: -6.5vh !important; /* -6.5 vertical, -15.5 horizantal */
+    --user-modal-banner-opacity:.75;
+    --user-modal-banner-blur:blur(2.6px);
+  
+	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
+	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
+	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
+	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(---background-repeat)] */
+	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
+	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
+	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
+	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(---background-invert)] */
+	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(---background-grayscale)] */
+	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(---background-sepia)] */
+	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+  
+    /* home icon */
+    --home-icon: url(https://clearvision.gitlab.io/icons/discord.svg);
+    --home-position: center;
+    --home-size: calc(var(--HSL-server-icon-size) * 1.5);
+    
+    /* Channel Coloring */
+	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+	--channel-color:  rgba(255,255,255,0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+	--muted-color: rgba(255,255,255,0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+    --channel-background-selected: transparent;
+  
+    /* Coloring by Status */
+	--online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+	--streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+    
+    /* text */
+	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+	--text-normal: rgb(220, 221, 222); /* color of default discord text */
+	--text-muted:  rgb(114, 118, 125); /* color of default discord muted text (text found in input fields before typing).*/
+    --watermark-override: "Emeralds are for viligers...";
+  
+    /* Chat Bubble Coloring */
+    --message-mentioned-color: #34e6271e;
+    --message-personal-color: var(--main-color);
+    --message-other-color: var(--main-color);
+    --message-hover-color: rgba(255, 192, 203, 0.226);
+    /* scroll to bottom to see how to add custom ones per user ID if you want to give specific people colors */
+    --message-max-width: 450px;
+    --chat-username-pill-color-other: var(--message-other-color);
+    --chatbar-color: transparent;
+  
+    /* Better Discrod Vars */
+	--bd-blue: var(--main-color);
+	--bd-blue-hover: var(--hover-color);
+	--bd-blue-active: var(--hover-color);
+  
+    /* Custom sizes */
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+    --container: 40px;
+    --server-container-padding: 200px;
+    --sticker-size: 75px;
+  
+  
+    /* Horizantal Server List */
+    --HSL-server-icon-size: 27px;
+    --HSL-server-spacing: 10px;
+  
+    /* raidal status variables */
+    --rs-small-spacing: 2px;
+    --rs-medium-spacing: 3px; 
+    --rs-large-spacing: 4px;
+    --rs-small-width: 2px;
+    --rs-medium-width: 3px;
+    --rs-large-width: 4px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: var(--online-color);
+    --rs-idle-color: var(--idle-color);
+    --rs-dnd-color: var(--dnd-color);
+    --rs-offline-color: var(--offline-color);
+    --rs-streaming-color: var(--streaming-color);
+    --rs-invisible-color: var(--offline-color);
+    --rs-phone-visible: block;
+  
+    /*Toast coloring*/
+    --toast-background: var(--bubble-color) !important;
+    --toast-header: var(--toast-background) !important;
+    --toast-contents: rgba(0, 0, 0, 0.25) !important;
+    --toast-box-shadow: var(--hover-color) !important;
+    --toast-border: var(--hover-color) !important;
+  
+    /* Channel Tabs */
+    --channelTabs-tabWidth: 180px !important;
+    --channelTabs-tabHeight: 20px !important;
+    --channelTabs-favHeight: 15px !important;
+    --channelTabs-favColor: rgba(0, 0, 0, 0.15);
+    --channelTabs-selectedColor: rgba(0, 0, 0, .25);
+    --channelTabs-iconRadius: var(--rs-avatar-shape); /* 0% = square | 50% = circle */
+  }
+  .userPopout-xaxa6l {
+      --USRBG-banner-height: 120px !important;
+  }
+
+  

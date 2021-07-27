@@ -1,7 +1,23 @@
-// BY USER 
+/**
+* Remove or add the // in front to add/disable styles.
+**/
 
+// BY USER 
 // @use "./Styles/Crenshaw.css";
+
+// SOLID STATE
 // @use "./Styles/Crimsion.css"
 
 
 // CLEARVISION OFFICAL PRESETS
+
+ @use "./Styles/Winter.css";
+// @use "./Styles/Emerald.css";
+
+
+// DO NOT TOUCH
+// this is here bc the horizantal server list creator , Gibbu (check out his shit btw),put an !important, and it overrides my code :/
+#app-mount .guilds-1SWlCJ {
+    height: calc(100vw - 15px) !important;
+    backdrop-filter: brightness(100%) !important;
+}
