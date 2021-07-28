@@ -24,8 +24,11 @@
   border-top-left-radius: 20px;
 }
 .channelTabs-closeTab {
-  margin-top: 3px;
-  background-color: var(--url-color) !important;
+  background-color: var(--danger-color) !important;
+  filter: brightness(150%);
+  border-radius: var(--bubble-radius-big) !important;
+  margin-top: calc(var(--channelTabs-tabHeight) / 2) !important;
+  margin-right: 3px;
 }
 .channelTabs-tab.channelTabs-selected {
   background-color: var(--channelTabs-selectedColor) !important;
