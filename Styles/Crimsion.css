@@ -199,10 +199,3 @@
 .userPopout-xaxa6l {
 	--USRBG-banner-height: 120px !important;
 }
-
-/* YOUR CODE */
-
-/* Remove un-needed optins */
-.wrapper-2jXpOf .content-1x5b-n .actionIcon-PgcMM2, [id='user-context-user-profile'], [id="user-context-mention"], [id="user-context-call"], [id="user-context-note"], [id="user-context-user-volume"], [id="user-context-block"], [id="user-context-remove-friend"], [aria-label="Open sticker picker"], .setIdentityLink-1t8Ahd, [id="message-notebook"], [id="message-copyrawmessage-copy-message"], [id="message-add-reaction"], [id="message-edit"], [id="message-pin"], [id="message-reply"], [id="guild-context-guild-settings"], [id="guild-context-privacy"], [id="guild-context-create-channel"], [id="guild-context-create-category"] {
-  display: none;
-}
