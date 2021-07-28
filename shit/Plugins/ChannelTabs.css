@@ -10,6 +10,7 @@
 }
 .channelTabs-tab {
   border-radius: 20px !important;
+  background-color: var(--bubble-color) !important;
 }
 .channelTabs-favContainer, .channelTabs-tabContainer {
   background-color: var(--bubble-color) !important;
