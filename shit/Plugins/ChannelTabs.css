@@ -10,6 +10,8 @@
 }
 .channelTabs-tab {
   border-radius: 20px !important;
+}
+.channelTabs-tab:not(.channelTabs-selected) {
   background-color: var(--bubble-color) !important;
 }
 .channelTabs-favContainer, .channelTabs-tabContainer {
