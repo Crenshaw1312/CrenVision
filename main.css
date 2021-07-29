@@ -99,6 +99,7 @@
   --user-modal-grayscale: 10%;
   --user-modal-invert: 0%;
   --user-modal-blur: 0px;
+  --user-modal-avatar-size: 200px;
   --user-modal-avatar-position-x: 35%; /*higher, more to right, 1-30 or so */
   --user-modal-avatar-position-y: -6.5vh !important; /* -6.5 vertical, -15.5 horizantal */
   --user-modal-banner-opacity:.5;
