@@ -51,3 +51,7 @@ display: none;
 .applicationName-1-Uq7y.clickable-1bVtEA:hover, .commandName-1klrjB.clickable-1bVtEA:hover, .username-1A8OIy.clickable-1bVtEA:hover {
   text-decoration: none !important;
 }
+/* Channel Tabs, just keep the settings in settings eh? */
+#channelTabs-settingsMenu {
+  display: none;
+}
