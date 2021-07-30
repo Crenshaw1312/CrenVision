@@ -17,3 +17,8 @@
   height: calc(100vw - 15px) !important;
   backdrop-filter: brightness(100%) !important;
 }
+
+/* is unread thing */
+#app-mount .guilds-1SWlCJ [class*=pill] span {
+  background-color: var(--url-color);
+}
