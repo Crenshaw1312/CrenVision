@@ -198,7 +198,7 @@
 }
 /* GUILD LIST */
 .wrapper-3NnKdC, #app-mount .guilds-1SWlCJ, #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
-    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
+    background: linear-gradient(var(--yoshino-green), var(--yoshino-red))!important;
 }
 /* CHANNEL TABS */
 .channelTabs-favContainer, .channelTabs-tabContainer {
