@@ -184,7 +184,7 @@
   }
   
   /* Phew, lots of customization to make this one work */
-:root {
+  :root {
     --yoshino-green: #62ca584b;
     --yoshino-red: #f53d5249;
 }
@@ -192,23 +192,23 @@
 .membersWrap-2h-GB4 .members-1998pB {
     background-color: var(--yoshino-red) !important;
 }
-/* CHANNEL LIST */
-.container-3w7J-x, .panels-j1Uci_ {
+/* CHANNEL/FRIENDS LIST and USER PANNEL */
+.container-3w7J-x, .panels-j1Uci_, .privateChannels-1nO12o {
     background-color: var(--yoshino-green) !important;
 }
 /* GUILD LIST */
 .wrapper-3NnKdC, #app-mount .guilds-1SWlCJ, #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
-    background: linear-gradient(var(--yoshino-green) 0% 49.75vw, black 49.75vw 52vw, var(--yoshino-red) 52vw 100%) !important;
+    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
 }
 /* CHANNEL TABS */
 .channelTabs-favContainer, .channelTabs-tabContainer {
-    background: linear-gradient(90deg, var(--yoshino-green) 0% 49.75vw, black 49.75vw 52vw, var(--yoshino-red) 52vw 100%) !important;
+    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
 }
 /* CHANNEL HEADER */
 .title-3qD0b-, .base-3dtUhz .container-1r6BKw {
-    background: linear-gradient(90deg, var(--yoshino-green) 0% 34.75vw, black 34.75vw calc(37vw + 1px), var(--yoshino-red) calc(37vw + 1px) 100%) !important;
+    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
 }
 /* CHAT BACKGROUND */
 .chatContent-a9vAAp, .peopleColumn-29fq28 {
-    background: linear-gradient(90deg, var(--yoshino-green) 0% 34.75vw, black 34.75vw calc(37vw + 1px), var(--yoshino-red) calc(37vw + 1px) 100%) !important;
+    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
 }
