@@ -1,8 +1,8 @@
 /**
- * @name CrenVision YOSHINO
+ * @name CrenVision Touching
  * @author Crenshaw#1312
  * @version 6
- * @description CrenVision... but YOSHINO'd
+ * @description ClearVision v6.
  * @source https://github.com/ClearVision/v6
  * @website https://clearvision.gitlab.io/join
  */
@@ -16,22 +16,22 @@
 /* ROOT */
 :root {
     /*Main Stuff*/
-	--main-color: #00000060; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--main-color: #23232536; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
 	--hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
 	--success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
 	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-    --interactive-active: pink;
+    --interactive-active: white;
     --interactive-normal: var(--headers-base-color);
     --url-color: var(--interactive-active); 
   /*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
-    --main-image: url(https://cdn.discordapp.com/attachments/860018395730411541/860444068303732736/887774.png); /* an image with duller colors looks nice on backdrop */
+    --main-image: url(https://i.imgur.com/OWgFFXG.jpeg); /* an image with duller colors looks nice on backdrop */
   
     /* glasscord */
     --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
   
     /*Bubble Coloration*/
     --bubble-color: var(--main-color); /* a bubble color with the last number being .2 - .5 works best*/
-    --headers-base-color: #ffffff;
+    --headers-base-color: #7e7e7e;
     --bubble-radius-big: 15px;
     --bubble-radius-small: 7.5px;
   
@@ -117,14 +117,14 @@
     /* text */
 	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
 	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-	--text-normal: rgb(255, 255, 255); /* color of default discord text */
+	--text-normal: rgb(255, 211, 249); /* color of default discord text */
 	--text-muted:  rgb(114, 118, 125); /* color of default discord muted text (text found in input fields before typing).*/
-    --watermark-override: "YOSHINO POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOG";
+    --watermark-override: "Need a hand?";
   
     /* Chat Bubble Coloring */
-    --message-mentioned-color: var(--main-color);
-    --message-personal-color: var(--yoshino-red);
-    --message-other-color: var(--yoshino-green);
+    --message-mentioned-color: #6e104259;
+    --message-personal-color: var(--main-color);
+    --message-other-color: var(--main-color);
     --message-hover-color: #00000028;
     /* scroll to bottom to see how to add custom ones per user ID if you want to give specific people colors */
     --message-max-width: 450px;
@@ -183,32 +183,4 @@
       --USRBG-banner-height: 120px !important;
   }
   
-  /* Phew, lots of customization to make this one work */
-  :root {
-    --yoshino-green: #62ca584b;
-    --yoshino-red: #f53d5249;
-}
-  /* MEMBER LIST */
-.membersWrap-2h-GB4 .members-1998pB {
-    background-color: var(--yoshino-red) !important;
-}
-/* CHANNEL/FRIENDS LIST and USER PANNEL */
-.container-3w7J-x, .panels-j1Uci_, .privateChannels-1nO12o {
-    background-color: var(--yoshino-green) !important;
-}
-/* GUILD LIST */
-.wrapper-3NnKdC, #app-mount .guilds-1SWlCJ, #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
-    background: linear-gradient(var(--yoshino-green), var(--yoshino-red))!important;
-}
-/* CHANNEL TABS */
-.channelTabs-favContainer, .channelTabs-tabContainer {
-    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
-}
-/* CHANNEL HEADER */
-.title-3qD0b-, .base-3dtUhz .container-1r6BKw {
-    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
-}
-/* CHAT BACKGROUND */
-.chatContent-a9vAAp, .peopleColumn-29fq28 {
-    background: linear-gradient(90deg, var(--yoshino-green), var(--yoshino-red))!important;
-}
+  

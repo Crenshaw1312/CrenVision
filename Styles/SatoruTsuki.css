@@ -1,0 +1,223 @@
+/**
+ * @name Crenvision SatoruTsuki
+ * @author Oyasumi, Satoru#5206 and Crenshaw#1312
+ * @version 6.1.0
+ * @description Highly customizable theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.gitlab.io
+ * @invite Qx2hyttRsU
+ */
+
+
+/* BEFORE USING READ DIS */
+/**
+*Requirement: BDFDB plugin
+** https://betterdiscord.app/plugin/BDFDB
+*Requirement: Channel Tabs (not really needed, just maeks the server list look not-shit)
+** https://betterdiscord.app/plugin/ChannelTabs
+*/
+
+/* Imports */
+@import url("https://crenshaw1312.github.io/CrenVision/main.css");
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css'); /* less round colors, the better tbh */
+@import url("https://raw.githack.com/Controlfreak707/Channel-Icons/main/channelicons.theme.css"); /* make chat icons cool, remove uotes to enable */
+@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css"); /* USRBG POPOUTS */
+@import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+/**
+* Hewowo :3
+* I'm Crenshaw#1312, and I like doing a prowgrwam thingmabaob
+* If you wanna join my server for, idk, stuff? => https://discord.com/invite/Qx2hyttRsU
+* I do JS, JSX, CSS, I then dabble in vue, python, and html. I'm learning C and C++!
+* Uhhhhh idfk what else you'd want, feel dree to DM me, they're always open.
+*/
+:root {
+  /*Main Stuff*/
+  --main-color: rgba(22,18,49,0.35);
+  --hover-color: rgba(255, 255, 255, 0.337);
+  --success-color: #43b581;
+  --danger-color: #982929;
+  --interactive-active: MediumSlateBlue;
+  --url-color: rgb(187, 168, 255); 
+
+  /* Alternate + main background */ 
+ --main-image: url(https://cdn.discordapp.com/attachments/872967492149080065/872974273411678328/girl-staring-out-window.gif);
+/* --main-image: url(https://media.giphy.com/media/vMSXa7KFGx49aeeXhe/source.gif); /* Rolling Casette gif */
+/* --main-image: url(https://cdn.discordapp.com/attachments/872967492149080065/872994863497490493/ponyo-night-ship.gif); /* Ponyo Ship gif  (the flashing tho)*/
+/* --main-image: url(https://cdn.discordapp.com/attachments/872967492149080065/872974273411678328/girl-staring-out-window.gif); /* Girl staring out window vertical gif (default) */
+/* --main-image: url(https://cdn.discordapp.com/attachments/872967492149080065/872996998507274270/smoking-girl.png); /* OG smoking girl */
+
+
+  /* glasscord */
+  --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
+
+  /*Bubble Coloration*/
+  --bubble-color: var(--main-color); /* a bubble color with the last number being .2 - .5 works best*/
+  --headers-base-color: rgb(255, 255, 255);
+  --bubble-radius-big: 20px;
+  --bubble-radius-small: 10px;
+
+  /*Appearences of main sections*/
+  --background-image: var(--main-image);
+  --background-shading: 20%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 125%;
+  --background-contrast: 125%;
+  --background-saturation: 150%;
+  --background-grayscale: 15%;
+  --background-invert: 0%;
+  --background-blur: 0px;
+  --background-overlay: rgba(12, 0, 83, 0.3);
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 250%; /* the lighter the less you see the user's background, and more the one you set prior (does make the background darker tho for those that don't ahve a usrbg)*/
+  --user-popout-contrast: 100%;
+  --user-popout-saturation: 200%;
+  --user-popout-grayscale: 0%;
+  --user-popout-invert: 10%;
+  --user-popout-blur: 0px;
+
+  --backdrop-overlay: none;
+  --backdrop-image: var(--main-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: 75%;
+  --backdrop-contrast: 75%;
+  --backdrop-saturation: 100%;
+  --backdrop-invert: 0%;
+  --backdrop-grayscale: 5%;
+  --backdrop-sepia: 0%;
+  --backdrop-blur: 2px;
+
+  /* home icon */
+  --home-icon: url(https://clearvision.gitlab.io/icons/discord.svg);
+  --home-position: center;
+  --home-size: calc(var(--HSL-server-icon-size) * 1);
+  
+  /* Channel Coloring */
+  --channel-unread: var(--url-color);
+  --channel-color: rgb(255, 255, 255);
+  --channel-background-selected: rgba(0, 0, 0, 0.185);
+  --channel-text-selected: hotpink;
+  --muted-color: rgba(255, 255, 255, 0.349);
+
+  /* Coloring by Status */
+  --online-color: #43b581;
+  --idle-color: #ff960f;
+  --dnd-color: #ff2c78;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  
+  /* text */
+  --main-font: Oxygen;
+  --code-font: Consolas;
+  --text-normal: rgba(255, 255, 255, .75);
+  --watermark-override:  "Goodnight, Satoru";
+
+  /* Chat Bubble Coloring */
+  
+  --message-mentioned-color: rgba(124,103,184, 0.45);
+  --message-personal-color: rgba(89, 0, 255, 0.35);
+  --message-other-color: var(--main-color);
+  --message-hover-color: rgba(124,103,184, 0.226);
+  --message-max-width: 400px;
+  --chat-username-pill-color-other: var(--message-other-color);
+  --chatbar-color: transparent;
+
+  /* Better Discrod Vars */
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+
+  /* Custom sizes */
+  --channels-width: 235px;
+  --members-width: 200px;
+  --container: 40px;
+  --server-container-padding: 200px;
+  --sticker-size: 75px;
+
+  /* Horizantal Server List */
+  --HSL-server-icon-size: 40px;
+  --HSL-server-spacing: 10px;
+
+  /* raidal status variables */
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 3px; 
+  --rs-large-spacing: 4px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 100%;
+  --rs-online-color: var(--online-color);
+  --rs-idle-color: var(--idle-color);
+  --rs-dnd-color: var(--dnd-color);
+  --rs-offline-color: var(--offline-color);
+  --rs-streaming-color: var(--streaming-color);
+  --rs-invisible-color: var(--offline-color);
+  --rs-phone-visible: block;
+
+  /*Toast coloring*/
+  --toast-background: var(--bubble-color) !important;
+  --toast-header: var(--main-color) !important;
+  --toast-contents: rgba(0,0,0,.4) !important;
+  --toast-box-shadow: rgba(255, 255, 255, 0.4) !important;
+  --toast-border: green !important;
+
+  /* Channel Tabs */
+  --channelTabs-tabWidth: 180px !important;
+  --channelTabs-tabHeight: 20px !important;
+  --channelTabs-favHeight: 15px !important;
+  --channelTabs-favColor: rgba(0, 0, 0, 0.15);
+  --channelTabs-selectedColor: rgba(0, 0, 0, .25);
+  --channelTabs-iconRadius: var(--rs-avatar-shape); /* 0% = square | 50% = circle */
+
+  /* If you could like leave this alone.. */
+  --background-floating: rgba(0, 0, 0, 0);
+}
+.userPopout-xaxa6l {
+	--USRBG-banner-height: 120px !important;
+}
+
+/* YOUR CODE */
+
+/* REMOVE INFO THING (remove this snippet if you have premium) */
+
+/* Server unread colors */
+#app-mount .guilds-1SWlCJ [class*=pill] span {
+    background-color: SlateBlue;
+}
+
+/* Remove things I don't care about */
+.wrapper-2jXpOf .content-1x5b-n .actionIcon-PgcMM2,
+[id="user-context-mention"],
+[id="user-context-call"],
+[id="user-context-note"],
+[id="user-context-block"],
+[id="user-context-remove-friend"],
+[aria-label="Open sticker picker"],
+.setIdentityLink-1t8Ahd,
+[id="message-notebook"],
+[id="message-copyrawmessage-copy-message"],
+[id="message-add-reaction"],
+[id="message-pin"],
+[id="message-reply"],
+[id="guild-context-guild-settings"],
+[id="guild-context-privacy"],
+[id="guild-context-create-channel"],
+[id="guild-context-create-category"] {
+	display: none;
+}
