@@ -9,10 +9,11 @@
 // @use "./Styles/Crenshaw.css";
 // @use "./Styles/WickedWizard.css";
 // @use "./Styles/YOSHINO.css";
+// @use "./Styles/SatoruTsuki.css";
 
 
 /* SOLID STATE */
-// @use "./Styles/Crimsion.css"
+// @use "./Styles/Crimsion.css";
 
 
 /* CLEARVISION OFFICAL PRESETS */
@@ -27,6 +28,11 @@
 
 /* NSFW */
 // @use "./Styles/TiredInBed.css";
+// @use "./Styles/Touching.css";
+// @use "./Styles/LesbKiss.css";
+
+/* EXTRAS */
+// @use "./Extras/Timeless.css"; /* remove chat timestamps, looks cleaner */
 
 
 // DO NOT TOUCH
@@ -35,6 +41,3 @@
     height: calc(100vw - 15px) !important;
     backdrop-filter: brightness(100%) !important;
 }
-
-
-// CUSTOM CODE
