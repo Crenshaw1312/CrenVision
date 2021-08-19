@@ -20,7 +20,10 @@
 .userPopout-xaxa6l .input-cIJ7To, .aboutMeSection-1Fw5Ia, .bodyTitle-1ySSKn, .textarea-2r0oV8, .marginBottom8-AtZOdT.size14-e6ZScH{
   text-align: center;
 }
-
+.userPopout-xaxa6l .aboutMeBody-3GuvKk {
+  overflow-y: scroll;
+  width: auto !important;
+}
 .userPopout-xaxa6l .aboutMeBody-3GuvKk, .userPopout-xaxa6l .rolesList-1geHY1, .userPopout-xaxa6l .note-1oo11U, .userPopout-xaxa6l .activity-2INFPu > div:not(.buttonsWrapper-2spIeK), .userPopout-xaxa6l .marginBottom8-AtZOdT.size14-e6ZScH, .userPopout-xaxa6l .colorStandard-2KCXvj.marginBottom8-AtZOdT{
   background-color: var(--bubble-color) !important;
   backdrop-filter: brightness(150%);
