@@ -72,8 +72,6 @@
   --user-popout-invert: 10%;
   --user-popout-blur: 0px;
   --user-popout-avatar-size: 95px;
-  --user-popout-avatar-position-x: 32%; /*higher, more to right, suggested: 1-10 */
-  --user-popout-avatar-position-y: 5.5% !important;
 
   --user-modal-image: var(--background-image);
   --user-modal-position: var(--background-position);
