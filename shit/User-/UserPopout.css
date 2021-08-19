@@ -1,3 +1,5 @@
+/* partial credits to mr_miner#6969 */
+
 .headerTop-3vNv-a, .rolesList-1geHY1, .headerTextNormal-2mGWX3, .customStatus-oN4ZZY, .aboutMeTitle-1IYtPE{
   display: flex;
   justify-content: center;
@@ -38,6 +40,8 @@
   align-items: center !important;
   -webkit-box-align: center !important;
 }
+
+/* make bubbles */
 .userPopout-xaxa6l .aboutMeBody-3GuvKk, .userPopout-xaxa6l .rolesList-1geHY1, .userPopout-xaxa6l .activity-2INFPu > div:not(.buttonsWrapper-2spIeK), .userPopout-xaxa6l .marginBottom8-AtZOdT.size14-e6ZScH, .userPopout-xaxa6l .colorStandard-2KCXvj.marginBottom8-AtZOdT{
   background-color: var(--bubble-color) !important;
   backdrop-filter: brightness(150%);
@@ -48,6 +52,19 @@
   margin-right: 6px;
   padding-bottom: 3px;
   width: auto !important;
+}
+.userPopout-xaxa6l .base-1x0h_U.muted-3-7c5L, .userPopout-xaxa6l .activity-2INFPu .headerTextNormal-2mGWX3 {
+  background-color: var(--bubble-color);
+  border-top-left-radius: var(--bubble-radius-small);
+  border-top-right-radius: var(--bubble-radius-small);
+  margin-bottom: 0px !important;
+  margin-right: 6px;
+}
+
+.userPopout-xaxa6l .note-1oo11U {
+  margin-right: 6px !important;
+  margin-left: 0px !important;
+  margin-bottom: 10px;
 }
 
 
