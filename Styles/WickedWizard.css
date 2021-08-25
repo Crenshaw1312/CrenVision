@@ -124,7 +124,7 @@
 	--watermark-override: "Hewwo, Wicked";
 
 	/* Chat Bubble Coloring */
-	--message-mentioned-color: rgba(235, 105, 96, 100);
+	--message-mentioned-color: rgba(0, 0, 0, .5);
 	--message-personal-color: rgba(89, 0, 255, 0.35);
 	--message-other-color: rgba(34, 34, 34, 0.253);
 	--message-hover-color: rgba(255, 192, 203, 0.226);
