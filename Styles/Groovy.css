@@ -24,7 +24,7 @@
 /* ROOT */
 :root {
   /*Main Stuff*/
-  --main-color: #77a3fb5b;
+  --main-color: #77a3fb3b;
   --hover-color: rgba(255, 255, 255, 0.337);
   --success-color: #43b581;
   --danger-color: #982929;
@@ -32,7 +32,7 @@
   --interactive-normal: var(--headers-base-color);
   --url-color: rgb(187, 168, 255); 
 /*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
-  --main-image: url(https://media.discordapp.net/attachments/860018395730411541/880210307161681940/unknown.png);
+  --main-image: url(https://discordgid.ru/wp-content/uploads/2020/06/groovy-discord.jpg);
 
   /* glasscord */
   --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
@@ -136,9 +136,9 @@
 
   /* Chat Bubble Coloring */
   --message-mentioned-color: rgba(105, 15, 83, 0.5);
-  --message-personal-color: rgba(89, 0, 255, 0.35);
+  --message-personal-color: darkblue;
   --message-other-color: rgba(34, 34, 34, 0.253);
-  --message-hover-color: rgba(255, 192, 203, 0.226);
+  --message-hover-color: var(--main-color);
   /* scroll to bottom to see how to add custom ones per user ID if you want to give specific people colors */
   --message-max-width: 400px;
   --chat-username-pill-color-other: var(--message-other-color);
