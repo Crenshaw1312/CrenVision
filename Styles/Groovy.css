@@ -1,0 +1,207 @@
+/**
+ * @name CrenVision Crenshaw#1312
+ * @author Crenshaw#1312 and Clearvison
+ * @version 69.420
+ * @description Clearvision theme, modded by Crenshaw#1312 to bubbly
+ * @source https://github.com/Crenshaw1312/CrensVision
+ * @website https://clearvision.gitlab.io
+ * @invite Qx2hyttRsU
+ */
+
+/* REQUIRED IMPORTS */
+@import url("https://crenshaw1312.github.io/CrenVision/main.css");
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); /* Architects Daughter */
+
+/* NOT REQUIRED */
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css'); /* the all-loved radial status */
+@import url("https://raw.githack.com/Controlfreak707/Channel-Icons/main/channelicons.theme.css"); /* make chat icons cool, remove quotes to enable */
+@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css"); /* USRBG POPOUTS */
+@import url("https://nyri4.github.io/Discolored/main.css"); /* makes discord's colorless images, colored! */
+/*@import url('https://mentalscars.github.io/Patch/transparency.css'); /* make it glasscord friendly, thanks cruxie#7861 (may need restart and may not work?) */
+
+/* ROOT */
+:root {
+  /*Main Stuff*/
+  --main-color: #77a3fb5b;
+  --hover-color: rgba(255, 255, 255, 0.337);
+  --success-color: #43b581;
+  --danger-color: #982929;
+  --interactive-active: darkblue;
+  --interactive-normal: var(--headers-base-color);
+  --url-color: rgb(187, 168, 255); 
+/*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
+  --main-image: url(https://media.discordapp.net/attachments/860018395730411541/880210307161681940/unknown.png);
+
+  /* glasscord */
+  --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
+
+  /*Bubble Coloration*/
+  --bubble-color: var(--main-color); /* a bubble color with the last number being .2 - .5 works best*/
+  --headers-base-color: rgb(255, 255, 255);
+  --bubble-radius-big: 20px;
+  --bubble-radius-small: 10px;
+
+  /*Appearences of main sections */
+  --background-image: var(--main-image);
+  --background-shading: 20%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 125%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-grayscale: 10%;
+  --background-invert: 5%;
+  --background-blur: 0px;
+  --background-overlay: rgba(12, 0, 83, 0.3);
+
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 100%; /* the lighter the less you see the user's background, and more the one you set prior (does make the background darker tho for those that don't ahve a usrbg)*/
+  --user-popout-contrast: 200%;
+  --user-popout-saturation: 150%;
+  --user-popout-grayscale: 70%;
+  --user-popout-invert: 10%;
+  --user-popout-blur: 0px;
+  --user-popout-avatar-size: 95px;
+
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 75%; /* the lighter the less you see the user's background, and more the one you set prior (does make the background darker tho for those that don't ahve a usrbg)*/
+  --user-modal-contrast: 100%;
+  --user-modal-saturation: 100%;
+  --user-modal-grayscale: 10%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 0px;
+  --user-modal-avatar-size: 200px;
+  --user-modal-avatar-position-x: 35%; /*higher, more to right, 1-30 or so */
+  --user-modal-avatar-position-y: -6.5vh !important; /* -6.5 vertical, -15.5 horizantal */
+  --user-modal-banner-opacity:.75;
+  --user-modal-banner-blur:blur(2.6px);
+
+  --backdrop-overlay: none;
+  --backdrop-image: var(--main-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: 75%;
+  --backdrop-contrast: 75%;
+  --backdrop-saturation: 100%;
+  --backdrop-invert: 0%;
+  --backdrop-grayscale: 5%;
+  --backdrop-sepia: 0%;
+  --backdrop-blur: 2px;
+
+  /* home icon */
+  --home-icon: url(https://clearvision.gitlab.io/icons/discord.svg);
+  --home-position: center;
+  --home-size: calc(var(--HSL-server-icon-size) * 1.5);
+  
+  /* Channel Coloring */
+  --channel-unread: var(--url-color);
+  --channel-color: rgb(255, 255, 255);
+  --channel-background-selected: rgba(0, 0, 0, 0.185);
+  --channel-text-selected: hotpink;
+  --muted-color: rgba(255, 255, 255, 0.349);
+
+  /* Coloring by Status */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  
+  /* text */
+  --main-font: Architects Daughter;
+  --code-font: Consolas;
+  --text-normal: rgba(255, 255, 255, .75);
+  --text-muted: rgba(128, 128, 128, 0.281);
+  --watermark-override: "Thank you groovy, for the good tunes and good times";
+
+  /* Chat Bubble Coloring */
+  --message-mentioned-color: rgba(105, 15, 83, 0.5);
+  --message-personal-color: rgba(89, 0, 255, 0.35);
+  --message-other-color: rgba(34, 34, 34, 0.253);
+  --message-hover-color: rgba(255, 192, 203, 0.226);
+  /* scroll to bottom to see how to add custom ones per user ID if you want to give specific people colors */
+  --message-max-width: 400px;
+  --chat-username-pill-color-other: var(--message-other-color);
+  --chatbar-color: rgba(0, 0, 139, 0.411);
+
+  /* Better Discrod Vars */
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+
+  /* Custom sizes */
+  --channels-width: 200px;
+  --members-width: 200px;
+  --container: 40px;
+  --server-container-padding: 200px;
+  --sticker-size: 75px;
+
+
+  /* Horizantal Server List */
+  --HSL-server-icon-size: 27px;
+  --HSL-server-spacing: 10px;
+
+  /* raidal status variables */
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 3px; 
+  --rs-large-spacing: 4px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 30%;
+  --rs-online-color: var(--online-color);
+  --rs-idle-color: var(--idle-color);
+  --rs-dnd-color: var(--dnd-color);
+  --rs-offline-color: var(--offline-color);
+  --rs-streaming-color: var(--streaming-color);
+  --rs-invisible-color: var(--offline-color);
+  --rs-phone-visible: block;
+
+  /*Toast coloring*/
+  --toast-background: var(--bubble-color) !important;
+  --toast-header: var(--toast-background) !important;
+  --toast-contents: rgba(0, 0, 0, 0.25) !important;
+  --toast-box-shadow: var(--hover-color) !important;
+  --toast-border: var(--hover-color) !important;
+
+  /* Channel Tabs */
+  --channelTabs-tabWidth: 180px !important;
+  --channelTabs-tabHeight: 20px !important;
+  --channelTabs-favHeight: 15px !important;
+  --channelTabs-favColor: rgba(0, 0, 0, 0.15);
+  --channelTabs-selectedColor: rgba(0, 0, 0, .25);
+  --channelTabs-iconRadius: var(--rs-avatar-shape); /* 0% = square | 50% = circle */
+
+  /* If you could like leave this alone.. */
+  --background-floating: rgba(0, 0, 0, 0);
+}
+.userPopout-xaxa6l {
+	--USRBG-banner-height: 120px !important;
+}
+
+/* YOUR CODE */
+
+/* Remove un-needed optins */
+.wrapper-2jXpOf .content-1x5b-n .actionIcon-PgcMM2, [id='user-context-user-profile'], [id="user-context-mention"], [id="user-context-call"], [id="user-context-note"], [id="user-context-user-volume"], [id="user-context-block"], [id="user-context-remove-friend"], [aria-label="Open sticker picker"], .setIdentityLink-1t8Ahd, [id="message-notebook"], [id="message-copyrawmessage-copy-message"], [id="message-add-reaction"], [id="message-edit"], [id="message-pin"], [id="message-reply"], [id="guild-context-guild-settings"], [id="guild-context-privacy"], [id="guild-context-create-channel"], [id="guild-context-create-category"] {
+  display: none;
+}
