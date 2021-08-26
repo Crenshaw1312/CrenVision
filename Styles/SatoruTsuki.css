@@ -67,12 +67,12 @@
   --background-size: cover;
   --background-repeat: no-repeat;
   --background-attachment: fixed;
-  --background-brightness: 125%;
-  --background-contrast: 125%;
-  --background-saturation: 150%;
-  --background-grayscale: 15%;
+  --background-brightness: 115%;
+  --background-contrast: 115%;
+  --background-saturation: 115%;
+  --background-grayscale: 0%;
   --background-invert: 0%;
-  --background-blur: 0px;
+  --background-blur: 2px;
   --background-overlay: rgba(12, 0, 83, 0.3);
   --user-popout-image: var(--background-image);
   --user-popout-position: var(--background-position);
