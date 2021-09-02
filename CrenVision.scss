@@ -32,8 +32,10 @@
 // @use "./Styles/LesbKiss.css";
 
 /* EXTRAS */
-// @use "./Extras/Timeless.css"; /* remove chat timestamps, looks cleaner */
-// @use "./Extras/ResizableSideThreads.css";
+// @use "./Extras/Timeless.css"; /* remove chat timestamps, looks cleaner ig */
+// @use "./Extras/ResizableSideThreads.css"; /* some snippet I found that's pretty cool ig */
+// @use "./Extras/CustomBubbleColors.css"; /* library of custom chat-bubble colors, feel free to PR to add yours */
+// @use "./Extras/NoScrollBars.css"; /* uh- it removes all scrollbars */
 
 // DO NOT TOUCH
 // this is here bc the horizantal server list creator , Gibbu (check out his shit btw),put an !important, and it overrides my code :/
