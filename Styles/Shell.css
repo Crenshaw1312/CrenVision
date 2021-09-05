@@ -1,0 +1,208 @@
+/**
+ * @name CrenVision Shell
+ * @author Crenshaw#1312, Shell, and Clearvison
+ * @version 69.420
+ * @description Clearvision theme, modded by Crenshaw#1312 to bubbly
+ * @source https://github.com/Crenshaw1312/CrensVision
+ * @invite Qx2hyttRsU
+ */
+
+
+/* BEFORE USING READ DIS */
+/**
+*Requirement: BDFDB plugin
+* https://betterdiscord.app/plugin/BDFDB
+*
+*Requirement: Channel Tabs (not really needed, just maeks the server list look not-shit)
+* https://betterdiscord.app/plugin/ChannelTabs
+*/
+
+/* required imports */
+@import url("https://crenshaw1312.github.io/CrenVision/main.css");
+@import url('https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css');
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://raw.githack.com/Discord-Theme-Addons/statuspicker-plus/master/src/support/StatusPickerPlus.theme.css");
+
+:root {
+  /*Main Stuff*/
+  --main-color: rgba(8, 8, 8, 0.335);
+  --hover-color: rgba(34, 22, 49, 0.337);
+  --success-color: #43b581;
+  --danger-color: #982929;
+  --interactive-active: rgb(122, 121, 233);
+  --url-color: rgb(187, 168, 255); 
+/*https://media.discordapp.net/attachments/773783597861437471/844710923167989760/187481365_781642939153484_8850979056342055258_n.png*/
+  --main-image: url(https://cdn.discordapp.com/attachments/879097840545173644/879419527631347763/unknown.png); /* an image with duller colors looks nice on backdrop */
+
+  /* glasscord */
+  --glasscord-win-blur: blurbehind; /* transparent (no blur) | blurbehind (some blur) | acrylic (lots of blur) May need to exit and restart discord */
+
+  /*Bubble Coloration*/
+  --bubble-color: var(--main-color); /* a bubble color with the last number being .2 - .5 works best*/
+  --headers-base-color: rgb(255, 255, 255);
+  --bubble-radius-big: 30px;
+  --bubble-radius-small: 10px;
+
+  /*Appearences of main sections */
+  --background-image: var(--main-image);
+  --background-shading: 100%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 120%;
+  --background-contrast: 125%;
+  --background-saturation: 150%;
+  --background-grayscale: 0%;
+  --background-invert: 0%;
+  --background-blur: 0.3px;
+  --background-overlay: rgba(255, 0, 76, 0.3);
+
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-repeat: var(--background-repeat);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 250%; /* the lighter the less you see the user's background, and more the one you set prior (does make the background darker tho for those that don't ahve a usrbg)*/
+  --user-popout-contrast: 100%;
+  --user-popout-saturation: 200%;
+  --user-popout-grayscale: 0%;
+  --user-popout-invert: 10%;
+  --user-popout-blur: 0px;
+  --user-popout-avatar-size: 95px;
+
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-repeat: var(--background-repeat);
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 100%; /* the lighter the less you see the user's background, and more the one you set prior (does make the background darker tho for those that don't ahve a usrbg)*/
+  --user-modal-contrast: 100%;
+  --user-modal-saturation: 100%;
+  --user-modal-grayscale: 10%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 0px;
+  --user-modal-avatar-size: 200px;
+  --user-modal-avatar-position-x: 35%; /*higher, more to right, 1-30 or so */
+  --user-modal-avatar-position-y: -6.5vh !important; /* -6.5 vertical, -15.5 horizantal */
+  --user-modal-banner-opacity:.5;
+  --user-modal-banner-blur:blur(2.6px);
+
+  --backdrop-overlay: none;
+  --backdrop-image: var(--main-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: 75%;
+  --backdrop-contrast: 75%;
+  --backdrop-saturation: 100%;
+  --backdrop-invert: 0%;
+  --backdrop-grayscale: 5%;
+  --backdrop-sepia: 0%;
+  --backdrop-blur: 2px;
+
+  /* home icon */
+  --home-icon: url(https://clearvision.gitlab.io/icons/discord.svg);
+  --home-position: center;
+  --home-size: calc(var(--HSL-server-icon-size) * 1.5);
+  
+  /* Channel Coloring */
+  --channel-unread: var(--url-color);
+  --channel-color: rgb(177, 174, 211);
+  --channel-background-selected: rgba(0, 0, 0, 0.185);
+  --channel-text-selected: rgb(134, 107, 231);
+  --muted-color: rgba(255, 255, 255, 0.349);
+
+  /* Coloring by Status */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  
+  /* text */
+  --main-font: Roboto Condensed;
+  --code-font: Consolas;
+  --text-normal: rgba(255, 255, 255, .75);
+  --text-muted: rgba(128, 128, 128, 0.281);
+  --watermark-override: "Hello, Crenshaw";
+
+  /* Chat Bubble Coloring */
+  --message-mentioned-color: rgba(78, 62, 116, 0.5);
+  --message-personal-color: rgba(99, 101, 230, 0.35);
+  --message-other-color: rgba(0, 0, 0, 0.253);
+  --message-hover-color: rgba(255, 192, 203, 0.226);
+  /* scroll to bottom to see how to add custom ones per user ID if you want to give specific people colors */
+  --message-max-width: 400px;
+  --chat-username-pill-color-other: var(--message-other-color);
+  --chatbar-color: transparent;
+
+  /* Better Discrod Vars */
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+
+  /* Custom sizes */
+  --channels-width: 200px;
+  --members-width: 200px;
+  --container: 40px;
+  --server-container-padding: 200px;
+  --sticker-size: 75px;
+
+
+  /* Horizantal Server List */
+  --HSL-server-icon-size: 35px;
+  --HSL-server-spacing: 15px;
+
+  /* raidal status variables */
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 3px; 
+  --rs-large-spacing: 4px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 35%;
+  --rs-online-color: var(--online-color);
+  --rs-idle-color: var(--idle-color);
+  --rs-dnd-color: var(--dnd-color);
+  --rs-offline-color: var(--offline-color);
+  --rs-streaming-color: var(--streaming-color);
+  --rs-invisible-color: var(--offline-color);
+  --rs-phone-visible: block;
+
+  /*Toast coloring*/
+  --toast-background: var(--bubble-color) !important;
+  --toast-header: var(--toast-background) !important;
+  --toast-contents: rgba(0, 0, 0, 0.25) !important;
+  --toast-box-shadow: var(--hover-color) !important;
+  --toast-border: var(--hover-color) !important;
+
+  /* Channel Tabs */
+  --channelTabs-tabWidth: 180px !important;
+  --channelTabs-tabHeight: 20px !important;
+  --channelTabs-favHeight: 15px !important;
+  --channelTabs-favColor: rgba(0, 0, 0, 0.15);
+  --channelTabs-selectedColor: rgba(0, 0, 0, .25);
+  --channelTabs-iconRadius: var(--rs-avatar-shape); /* 0% = square | 50% = circle */
+
+  /* If you could like leave this alone.. */
+  --background-floating: rgba(0, 0, 0, 0);
+
+  /* better status picker, user panel thing, online, offline? ring a bell  yet? */
+  --avatar-gap-bg: var(--bubble-color);
+    --menu-bg: var(--bubble-color);
+	--custom-status-bg: var(--background-secondary-alt);
+	--box-shadow-color: transparent;
+	--custom-status-hover: transparent;
+	--border-radius: var(--bubble-radius-small);
+}
+.userPopout-xaxa6l {
+	--USRBG-banner-height: 120px !important;
+}
